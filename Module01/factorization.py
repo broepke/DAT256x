@@ -1,4 +1,5 @@
 from math import sqrt
+import numpy as np
 
 n = 100
 
@@ -14,3 +15,9 @@ for i in range(1, int(n / 2) + 1):
     for j in range(1, i):
         if i * j == n:
             print(j, ' times ', i, ' equals ', n)
+
+# Greated common divisor
+a = np.gcd(6, 15)
+b = np.gcd.reduce([5,25,35])
+
+print(a, ',' , b)
